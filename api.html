@@ -1,0 +1,88 @@
+<!--window x,y & scroll-->
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>X&Y</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .button {
+        position: fixed;
+        right: 10px;
+      }
+
+      .rec {
+        background-color: blanchedalmond;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 5px;
+      }
+
+      .coral {
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="button">
+      <button id="btn1">scroll by 100px(y)</button>
+      <button id="btn2">scroll to 100px(y)</button>
+      <button id="btn3">scroll into special</button>
+    </aside>
+
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec coral"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+    <div class="rec"></div>
+
+    <script>
+      // arrow function : event => {const rect = div.getBoundingClientRect();}
+      const special = document.querySelector(".rec.coral");
+      special.addEventListener("click", function (event) {
+        const rect = special.getBoundingClientRect();
+        // alert(
+        //   "Coordinates: " + rect.left + "px, " + Math.trunc(rect.top) + "px"
+        // );
+        console.log(rect);
+        console.log(`client: ${event.clientX},${event.clientY}`);
+        console.log(`Page: ${event.pageX},${event.pageY}`);
+      });
+
+      const xplore = document.querySelector("#btn1");
+      // xplore.addEventListener("click", function () {
+      //   window.scrollBy({ left: 0, top: 100, behavior: "smooth" });
+      // });
+      xplore.addEventListener("click", () => {
+        window.scrollBy({ left: 0, top: 100, behavior: "smooth" });
+      });
+
+      const xplore2 = document.querySelector("#btn2");
+      xplore2.addEventListener("click", function () {
+        window.scrollTo({ left: 0, top: 100, behavior: "smooth" });
+      });
+
+      const xplore3 = document.querySelector("#btn3");
+      xplore3.addEventListener("click", function () {
+        special.scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>

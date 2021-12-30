@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="carrot_container">
+      <button class="btn">Find a rabbit🐰</button>
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/rabbit.png" class="carrot rabbit" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+      <img src="img/carrot.png" class="carrot" alt="" />
+    </div>
+
+    <script>
+      const rabbitFindBtn = document.querySelector(".btn");
+      const rabbit = document.querySelector(".carrot.rabbit");
+
+      rabbitFindBtn.addEventListener("click", () => {
+        rabbit.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    </script>
+  </body>
+</html>
