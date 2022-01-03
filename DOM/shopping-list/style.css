@@ -1,0 +1,79 @@
+body {
+  background-color: #c8cddb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.list {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 10px 5px 5px #c3c4c3;
+}
+.main {
+  flex-grow: 1;
+  background-color: #f0eef4;
+}
+.input {
+  background-color: white;
+}
+.line-color {
+  height: 50px;
+  background: rgb(231, 184, 205);
+  background: linear-gradient(
+    118deg,
+    rgba(231, 184, 205, 1) 0%,
+    rgba(123, 180, 237, 1) 100%
+  );
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  margin: 5px auto;
+  background-color: black;
+  border-radius: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+.btn span {
+  font-size: 40px;
+}
+
+#name {
+  width: 400px;
+  outline: none;
+  border-width: 0px;
+  border: none;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+}
+
+.list-item span:hover {
+  color: red;
+  cursor: pointer;
+}
