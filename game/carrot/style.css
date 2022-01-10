@@ -1,0 +1,132 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  background-image: url("img/background.png");
+  background-size: cover;
+  background-position: top center;
+  border-radius: 5%;
+  width: 800px;
+  height: 500px;
+  margin-top: 40px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.play_btn {
+  margin-top: 10px;
+  background-color: bisque;
+  width: 62px;
+  height: 62px;
+  border-radius: 20%;
+  border: solid 4px black;
+  cursor: pointer;
+}
+.fa-play {
+  font-size: 28px;
+}
+.fa-pause {
+  font-size: 28px;
+  display: none;
+}
+
+.fa-redo-alt {
+  font-size: 28px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  margin-top: 8px;
+  background-color: white;
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+  border: solid 4px black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.carrot_num {
+  margin-top: 5px;
+  background-color: coral;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 4px black;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.retry {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 350px;
+  height: 130px;
+  border-radius: 20px;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 30px;
+}
+.retry-btn {
+  margin-top: 10px;
+  background-color: bisque;
+  width: 62px;
+  height: 62px;
+  border-radius: 20%;
+  border: solid 4px black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.retry span {
+  color: white;
+  font-size: 40px;
+}
+
+.carrots li,
+.bugs li {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.bugs li:hover,
+.carrots li:hover {
+  transform: scale(1.15);
+}
+.music-toggle {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fa-volume-up {
+  display: none;
+}
